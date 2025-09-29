@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FTW | Data & Web Developer</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="Assets/favicon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="Assets/favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="Assets/favicon.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Righteous&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+
+    <div class="bg-animation">
+        <div class="shooting-star"></div>
+        <div class="shooting-star"></div>
+        <div class="shooting-star"></div>
+        <div class="shooting-star"></div>
+        <div class="shooting-star"></div>
+        <div class="shooting-star"></div>
+        <div class="shooting-star"></div>
+        <div class="shooting-star"></div>
+        <div class="shooting-star"></div>
+        <div class="shooting-star"></div>
+    </div>
+
+    <header>
+        <nav>
+            <div class="logo-container">
+                <a href="#" class="logo">
+                    <img src="/Assets/Logo FTW.png" alt="FTW Logo">
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#about" class="active">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero" class="reveal"> <div class="hero-content">
+                <p class="hero-pre-title">My name is</p>
+                <h1 class="highlight">Fransiskus Triyanto Winata</h1>
+                <p class="subtitle">I'm a <span id="typing-text"></span></p>
+                <p class="description">
+                    Hi everyone! Welcome to my portfolio. Please feel free to look around and explore my work!
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn">View My Work</a>
+                    <a href="https://drive.google.com/drive/folders/1WOorI4piqN6cgCQIpdFzv4zI8-0FImBR?usp=sharing" target="_blank" class="btn btn-secondary">View CV</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="/Assets/Picture.jpg" alt="Your Profile Picture">
+            </div>
+        </section>
+
+        <section id="about" class="reveal">
+            <div class="about-me-picture">
+                <img src="/Assets/AboutMe.jpg" alt="A small profile picture of Fransiskus">
+            </div>
+            <h2>About Me</h2>
+            <div class="about-container">
+                <div class="about-text">
+                    <p>
+                        Motivated Computer Science undergraduate currently in the 5th semester, passionate about learning and gaining practical experience in data management, data analysis, and artificial intelligence. Through academic projects and extracurricular activities, I have gained hands-on experience in web development and data handling, while also strengthening technical skills and soft skills. I am eager to continuously enhance my expertise in the field and ready to contribute positively in any activity I take part in.
+                </div>
+
+                <div class="skills-container">
+                    <div class="skills-column">
+                        <h4>Hard Skills</h4>
+                        <h5>Programming Languages</h5>
+                        <div class="skills-tags">
+                            <span>HTML & CSS</span>
+                            <span>JavaScript</span>
+                            <span>SQL</span>
+                            <span>Python</span>
+                            <span>PHP</span>
+                        </div>
+                        <h5>Databases Skills</h5>
+                        <div class="skills-tags">
+                            <span>MySQL</span>
+                            <span>MongoDB</span>
+                            <span>Big Data</span>
+                        </div>
+                        <h5>Tools & Technologies</h5>
+                        <div class="skills-tags">
+                            <span>GitHub</span>
+                            <span>Figma</span>
+                            <span>Docker</span>
+                        </div>
+                    </div>
+                    <div class="skills-column">
+                        <h4>Soft Skills</h4>
+                        <div class="skills-tags">
+                            <span>Adaptability</span>
+                            <span>Collaboration</span>
+                            <span>Communication</span>
+                            <span>Critical Thinking</span>
+                            <span>Responsible</span>
+                            <span>Perseverance</span>
+                            <span>Problem Solving</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="reveal"> <h2>Featured Projects</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <div class="project-thumbnail">
+                        <img src="/Assets/PredictDiabetes.png" alt="Diabetes Prediction Project Thumbnail">
+                    </div>
+                    <div class="project-info">
+                        <h3>Predictive Analysis for Diabetes Diagnosis</h3>
+                        <p>Data Analytics project focused on predicting diabetes. The workflow includes data cleaning, feature selection, and in-depth exploratory data analysis (EDA) to identify significant health indicators. Several classification models were trained and optimized through hyperparameter tuning to improve predictive accuracy. providing an interactive interface for users to input data and receive predictions in real time.</p>
+                        <div class="project-tech"><span>Data Analytics</span><span>ML</span></div>
+                         <div class="project-links">
+                            <a href="https://www.canva.com/design/DAG0ZUHuNho/NTik499rktyQAGXINCpbTw/edit?utm_content=DAG0ZUHuNho&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank" class="btn-project">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                 <div class="project-card">
+                    <div class="project-thumbnail">
+                        <img src="/Assets/PredictHepatitis.png" alt="Hepatitis C Prediction Project Thumbnail">
+                    </div>
+                    <div class="project-info">
+                        <h3>Hepatitis C Diagnosis Prediction</h3>
+                        <p>A computational biology project that applies machine learning to predict Hepatitis C diagnosis using patient medical data. The workflow covers data preprocessing, feature engineering, and exploratory data analysis (EDA) to identify significant clinical attributes. Several models were developed and optimized with hyperparameter tuning, followed by performance evaluation and result visualization.</p>
+                        <div class="project-tech"><span>Data Analytics</span><span>Classification</span></div>
+                         <div class="project-links">
+                            <a href="https://www.canva.com/design/DAG0ZZHJCcI/X371iZpJfNuQbtCZJawg3w/edit?utm_content=DAG0ZZHJCcI&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank" class="btn-project">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-thumbnail">
+                        <img src="/Assets/Smartlib.png" alt="SMARTLIB Project Thumbnail">
+                    </div>
+                    <div class="project-info">
+                        <h3>SMARTLIB: A Digital Library System</h3>
+                        <p>A structured database design project developed to support digital library management. The system covers book cataloging, category organization, and user management, supported by ERD modeling and CRUD implementation. The project also emphasizes process flow design to integrate database operations with real-world library use cases.</p>
+                        <div class="project-tech"><span>Database Design</span><span>SQL</span><span>System Flow</span></div>
+                        <div class="project-links">
+                            <a href="https://www.canva.com/design/DAG0Zdze4pg/uwKHjBQhnAl2YXWygfz41Q/edit?utm_content=DAG0Zdze4pg&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank" class="btn-project">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-thumbnail">
+                        <img src="/Assets/BDP.png" alt="YouTube Big Data Pipeline Thumbnail">
+                    </div>
+                    <div class="project-info">
+                        <h3>YouTube Big Data Pipeline</h3>
+                        <p>A comprehensive big data processing system for YouTube Live Streaming Comment analytics featuring data ingestion, processing pipelines, MongoDB storage, and real-time dashboard visualization. Includes Docker containerization and sentiment analysis capabilities.</p>
+                        <div class="project-tech"><span>Python</span><span>MongoDB</span><span>Docker</span><span>Dashboard</span><span>NLP</span><span>Big Data</span></div>
+                        <div class="project-links">
+                            <a href="https://www.canva.com/design/DAG0ZZoKBnQ/q9pVzxSLrTJH9ZHAfoLMFQ/edit?utm_content=DAG0ZZoKBnQ&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank" class="btn-project">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-thumbnail">
+                        <img src="/Assets/Asphatl.png" alt="Asphalt 9 Project Thumbnail">
+                    </div>
+                    <div class="project-info">
+                        <h3>Project Asphalt 9: ReJends</h3>
+                        <p>A project assignment inspired by the game Asphalt 9: Legends, focusing on UI/UX design. I created a high-fidelity interactive prototype in Figma and developed the front-end.</p>
+                        <div class="project-tech"><span>UI/UX</span><span>Figma</span><span>Frontend</span></div>
+                         <div class="project-links">
+                            <a href="https://github.com/Fransiskus11/Project-Asphatl-9-ReJends" target="_blank" class="btn-project">View Project</a>
+                            <a href="https://www.figma.com/proto/1986ySyJGLSTd1z7bUEp94/Untitled?node-id=2-4&p=f&t=E5kd6jp2IiM1ReMd-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1" target="_blank" class="btn-project-secondary">View Prototype</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-thumbnail">
+                        <img src="/Assets/Learnify.png" alt="Learnify Project Thumbnail">
+                    </div>
+                    <div class="project-info">
+                        <h3>Learnify: Smart Quiz Generator</h3>
+                        <p>Developed a mobile-based educational prototype that processes learning materials to automatically generate relevant quizzes, enhancing the study experience through data-driven content. Focused on mobile-first design and personalized learning assistance.</p>
+                        <div class="project-tech"><span>Data Processing</span><span>Web Dev</span></div>
+                        <div class="project-links">
+                            <a href="https://www.figma.com/proto/7HbAhvThcG0V8cR5fnAR9F/E-Learning---Online-Class-App--Figma---Community-?node-id=194-8868&starting-point-node-id=194%3A8868&t=0AbitEnpFQ0oJzJd-1" target="_blank" class="btn-project-secondary">View Prototype</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="experience" class="reveal"> <h2>Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Research Paper on Deepfake Detection (Published)</h3>
+                        <span class="timeline-date">ICCSCI Conference</span>
+                        <p>Conducted collaborative research to write and publish a paper comparing various Deepfake detection algorithms, including CNN, RNN, and Hybrid Models.</p>
+                        
+                        <div class="timeline-links">
+                            <a href="/Assets/Final Paper - Group19.pdf" target="_blank" class="btn-timeline">View Paper</a>
+                            <a href="/Assets/E-Certificate.pdf" target="_blank" class="btn-timeline-secondary">View Certificate</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Freshmen Leader</h3>
+                        <span class="timeline-date">University Orientation</span>
+                        <p>Guided a group of new students through the campus orientation period, mentoring them on adapting to university life and providing essential information on academic procedures.</p>
+                    </div>
+                </div>
+                 <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Freshmen Partner</h3>
+                        <span class="timeline-date">ESSE Course</span>
+                        <p>Served as a Peer Instructor for the ESSE course for two semesters, developing and delivering content focused on essential soft skill development for freshmen.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Member of College Volleyball Organization</h3>
+                        <span class="timeline-date">Campus Activity</span>
+                        <p>Actively participated in regular training sessions, collaborating with team members to build teamwork, discipline, and sportsmanship.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="reveal"> <h2>Contact Me</h2>
+            <p class="contact-subtitle">Let’s connect! I’m always open to new ideas, opportunities, or even just a friendly chat. I’d be happy to hear from you!</p>
+            <div class="contact-info-grid">
+                <a href="mailto:triyantofransiskus@gmail.com" class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <div class="contact-text">
+                        <h4>Email</h4>
+                        <p>Send me a message</p>
+                    </div>
+                </a>
+                <a href="https://www.linkedin.com/in/fransiskus-triyanto-winata-a66a53325/" target="_blank" class="contact-item">
+                    <i class="fab fa-linkedin"></i>
+                    <div class="contact-text">
+                        <h4>LinkedIn</h4>
+                        <p>Let's connect with me!</p>
+                    </div>
+                </a>
+                <a href="https://github.com/Fransiskus11" target="_blank" class="contact-item">
+                    <i class="fab fa-github"></i>
+                    <div class="contact-text">
+                        <h4>GitHub</h4>
+                        <p>See my code</p>
+                    </div>
+                </a>
+            </div>
+            <div class="additional-contact-info">
+            <div class="info-line">
+                <i class="fas fa-phone"></i>
+                <span>+62 878-0926-0454</span>
+            </div>
+            <div class="info-line">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Kebon Jeruk, Jakarta Barat, DKI Jakarta, Indonesia</span>
+            </div>
+    </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 | Fransiskus Triyanto Winata</p>
+    </footer>
+
+    <a href="#" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+
+    <script src="script.js"></script>
+</body>
+</html>
