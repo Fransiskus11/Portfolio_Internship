@@ -128,9 +128,9 @@ nav {
 .hero-content { max-width: 55%; }
 .hero-pre-title {
     color: #fff; 
-    font-size: 1.2rem;           
+    font-size: 1.2rem;          
     font-weight: 400;
-    margin-bottom: 5px;          
+    margin-bottom: 5px;         
 }
 .hero-content h1 { font-size: 3.5rem; line-height: 1.2; color: #3a86ff;}
 .hero-content .subtitle { font-size: 1.5rem; margin: 20px 0; color: var(--text-secondary); }
@@ -150,7 +150,7 @@ nav {
 .skills { display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; margin-top: 20px; }
 .skills span { background: #2a3457; color: var(--primary-color); padding: 8px 18px; border-radius: 5px; font-weight: 500; font-size: 0.9rem;}
 
-/* --- Projects Section (UPDATED) --- */
+/* --- Projects Section --- */
 .project-grid { 
     display: grid; 
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); 
@@ -163,31 +163,32 @@ nav {
     box-shadow: var(--box-shadow);
     display: flex;
     flex-direction: column;
-    overflow: hidden; /* Penting untuk menyembunyikan gambar yang meluap */
-    transition: transform 0.3s ease, box-shadow 0.4s ease; /* Transisi untuk efek angkat sedikit */
+    overflow: hidden; 
+    transition: transform 0.3s ease, box-shadow 0.4s ease;
 }
 
 .project-card:hover {
-    transform: translateY(-8px); /* Efek terangkat sedikit saat di-hover */
+    transform: translateY(-8px); 
     box-shadow: 0 20px 40px -15px rgba(2,12,27,0.9);
 }
 
 .project-thumbnail {
     width: 100%;
-    height: 0; /* Awalnya tinggi 0, jadi tidak terlihat */
+    height: 0; 
     overflow: hidden;
-    transition: height 0.4s ease-in-out; /* Animasi untuk tinggi */
+    transition: height 0.4s ease-in-out; 
 }
 
 .project-thumbnail img {
     width: 100%;
-    height: 180px; /* Atur tinggi gambar sesuai keinginan */
-    object-fit: cover; /* Pastikan gambar mengisi area tanpa distorsi */
+    height: 280px; 
+    object-fit: cover; 
 }
 
 .project-card:hover .project-thumbnail {
-    height: 180px; /* Tinggi saat di-hover, sesuaikan dengan tinggi gambar */
+    height: 280px; 
 }
+
 
 .project-info { padding: 30px; flex-grow: 1; display: flex; flex-direction: column; }
 .project-info h3 { margin-bottom: 15px; font-size: 1.4rem; color: #fff; }
@@ -263,11 +264,11 @@ nav {
 .contact-item i {
     font-size: 2.5rem;
     color: var(--primary-color);
-    flex-shrink: 0; /* Mencegah ikon dari penyusutan */
+    flex-shrink: 0;
 }
 
 .contact-text {
-    min-width: 0; /* Kunci #1: Izinkan kontainer ini untuk mengecil */
+    min-width: 0;
 }
 
 .contact-text h4 {
@@ -279,19 +280,25 @@ nav {
 .contact-text p {
     color: var(--text-secondary);
     font-size: 0.95rem;
-    word-break: break-all; /* Kunci #2: Paksa teks untuk patah/turun baris */
+    word-break: break-word; 
 }
 
 
 footer { text-align: center; padding: 40px 20px; }
 footer p { color: var(--text-secondary); font-size: 0.9rem; }
 
+/* --- Smaller Desktop / Large Tablet --- */
 @media (max-width: 992px) { 
     section { padding: 80px 5%; } 
     nav { padding: 20px 5%; } 
 }
 
+/* --- Tablet & Mobile --- */
 @media (max-width: 768px) {
+    h2 {
+        font-size: 2.2rem; 
+    }
+
     .hero-content h1 {
         font-size: 2.8rem;
     }
@@ -336,10 +343,32 @@ footer p { color: var(--text-secondary); font-size: 0.9rem; }
         max-width: 100%; 
         margin-top: 40px; 
     }
+    
+    .hero-content .subtitle {
+        font-size: 1.2rem; 
+    }
 
     .hero-image img { 
         width: 250px; 
         height: 250px; 
+        object-fit: cover; 
+        border-radius: 50%; 
+    }
+    
+    .about-container {
+        flex-direction: column;
+        gap: 40px;
+    }
+    
+    .skills-container {
+        grid-template-columns: 1fr; 
+        gap: 40px; 
+    }
+    
+    .skills-column:last-child .skills-tags {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; 
     }
 
     .timeline::after { 
@@ -361,14 +390,21 @@ footer p { color: var(--text-secondary); font-size: 0.9rem; }
         left: 13px; 
     }
     
-    .skills-container {
-        grid-template-columns: 1fr;
-    }
-
     .hero-buttons {
         justify-content: center;
     }
 }
+
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 2.2rem;
+    }
+    .hero-buttons {
+        flex-direction: column; 
+        gap: 15px;
+    }
+}
+
 
 @keyframes primary-pulse {
     0% { box-shadow: 0 0 0 0 rgba(58, 134, 255, 0.4); }
@@ -416,11 +452,6 @@ footer p { color: var(--text-secondary); font-size: 0.9rem; }
     background-color: var(--primary-color);
     color: #fff;
     transform: translateY(-3px);
-}
-@media (max-width: 768px) {
-    .hero-buttons {
-        justify-content: center;
-    }
 }
 
 /* --- Animated Shooting Stars Background --- */
@@ -510,7 +541,6 @@ footer p { color: var(--text-secondary); font-size: 0.9rem; }
     background-color: #3377e0;
 }
 
-/* --- New Styles for About Me Section --- */
 .about-me-picture {
     text-align: center;
     margin-bottom: 20px;
@@ -555,12 +585,6 @@ footer p { color: var(--text-secondary); font-size: 0.9rem; }
     gap: 12px;
 }
 
-.skills-column:last-child .skills-tags {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 15px;
-}
-
 .skills-tags span { 
     background: #2a3457; 
     color: var(--primary-color); 
@@ -571,7 +595,6 @@ footer p { color: var(--text-secondary); font-size: 0.9rem; }
     text-align: center;
 }
 
-/* --- Styling untuk Tombol di Timeline --- */
 .timeline-links {
     display: flex;
     gap: 20px;
@@ -600,7 +623,6 @@ footer p { color: var(--text-secondary); font-size: 0.9rem; }
     color: var(--primary-color);
 }
 
-/* --- Styling untuk Info Kontak Tambahan (Responsif) --- */
 .additional-contact-info {
     display: flex;
     justify-content: space-between;
@@ -608,7 +630,7 @@ footer p { color: var(--text-secondary); font-size: 0.9rem; }
     flex-wrap: wrap;
     gap: 20px;
     margin-top: 60px;
-    max-width: 800px; /* Lebar optimal untuk layar besar */
+    max-width: 800px;
     padding: 0 20px;
     margin-left: auto;
     margin-right: auto;
